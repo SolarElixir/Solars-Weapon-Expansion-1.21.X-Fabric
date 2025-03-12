@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "Ingredients",
+  "key": {
+    "#": {
+      "item": "swe:golden_handle"
+    },
+    "O": {
+      "item": "minecraft:red_carpet"
+    }
+    },
+    "pattern": [
+      "#",
+      "O",
+      "#"
+    ],
+    "result": {
+      "count": 1,
+      "id": "swe:golden_pole"
+    }
+}

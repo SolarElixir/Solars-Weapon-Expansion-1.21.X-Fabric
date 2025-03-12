@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "ingredients",
+  "cookingtime": 150,
+  "experience": 0.2,
+  "group": "refined_jade",
+  "ingredient": {
+    "item": "swe:impure_jade_chunk"
+  },
+  "result": {
+    "id": "swe:refined_jade"
+  }
+}

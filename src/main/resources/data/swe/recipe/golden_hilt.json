@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "Ingredients",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "#  ",
+    " # ",
+    "# #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "swe:golden_hilt"
+  }
+}

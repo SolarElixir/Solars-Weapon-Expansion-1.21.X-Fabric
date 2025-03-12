@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "swe",
+	"version": "${version}",
+	"name": "Solar's Weapon Expansion",
+	"description": "My first ever mod aiming to improve weaponry in Minecraft",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/swe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.solarelixir.swe.SolarsWeaponExpansion"
+		],
+		"fabric-datagen": [
+			"net.solarelixir.swe.SolarsWeaponExpansionDataGenerator"
+		],
+		"client": [
+			"net.solarelixir.swe.SWEClient"
+		]
+	},
+	"mixins": [
+		"swe.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

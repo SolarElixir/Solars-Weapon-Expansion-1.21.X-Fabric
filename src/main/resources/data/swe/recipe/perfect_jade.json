@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "swe:refined_jade"
+  },
+  "result": {
+    "count": 1,
+    "id": "swe:perfect_jade"
+  }
+}

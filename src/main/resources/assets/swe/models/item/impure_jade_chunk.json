@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+     "layer0": "swe:item/impure_jade_chunk"
+  }
+
+}
