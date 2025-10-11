@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ingredients",
+  "ingredients": [
+    {
+      "item": "swe:perfect_jade"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "swe:jade_dagger_blade"
+  }
+}

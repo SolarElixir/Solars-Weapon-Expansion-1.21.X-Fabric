@@ -3,6 +3,7 @@ package net.solarelixir.swe.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,14 +12,18 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.solarelixir.swe.SolarsWeaponExpansion;
 
 public class ModBlocks {
 public static final Block DEEPSLATE_JADE_ORE = registerBlock("deepslate_jade_ore",
-        new Block(AbstractBlock.Settings.create().strength(4.5F, 3.0F)
+        new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                AbstractBlock.Settings.create().strength(4.5F, 3.0F)
                 .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
-public static final Block JADE_ORE = registerBlock("jade_ore",
-        new Block(AbstractBlock.Settings.create().instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3.0F, 3.0F)));
+    public static final Block JADE_ORE = registerBlock("jade_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3F, 3.0F).instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
 
 private static Block registerBlock(String name, Block block){
     registerBlockItems(name, block);

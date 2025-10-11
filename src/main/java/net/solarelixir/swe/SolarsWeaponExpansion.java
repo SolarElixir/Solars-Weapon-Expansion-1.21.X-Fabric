@@ -1,4 +1,5 @@
 package net.solarelixir.swe;
+
 import net.fabricmc.api.ModInitializer;
 import net.solarelixir.swe.block.ModBlocks;
 import net.solarelixir.swe.item.ModItemGroups;

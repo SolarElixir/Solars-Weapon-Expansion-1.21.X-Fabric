@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-     "layer0": "swe:item/pure_jade"
+     "layer0": "swe:item/jade_chisel"
   }
+
 }

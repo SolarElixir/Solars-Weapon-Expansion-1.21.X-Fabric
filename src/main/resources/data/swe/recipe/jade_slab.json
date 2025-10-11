@@ -1,0 +1,16 @@
+{
+"type": "minecraft:crafting_shaped",
+  "category": "Ingredients",
+  "key": {
+    "#": {
+      "item": "swe:perfect_jade"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "swe:jade_slab"
+  }
+}

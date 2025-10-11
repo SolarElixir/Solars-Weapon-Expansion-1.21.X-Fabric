@@ -16,15 +16,34 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
         FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.JADE_BLADE))
                 .displayName(Text.translatable("itemgroup.swe.solars_weapons_mod"))
                 .entries((displayContext, entries) -> {
-                    entries.add(ModItems.GOLDEN_POLE);
-                    entries.add(ModItems.GOLDEN_HILT);
-                    entries.add(ModItems.GOLDEN_HANDLE);
+                    //Jade items
                     entries.add(ModItems.JADE_BLADE);
+
+                    entries.add(ModBlocks.JADE_ORE);
+                    entries.add(ModBlocks.DEEPSLATE_JADE_ORE);
+
                     entries.add(ModItems.PERFECT_JADE);
                     entries.add(ModItems.REFINED_JADE);
                     entries.add(ModItems.IMPURE_JADE_CHUNK);
-                    entries.add(ModBlocks.JADE_ORE);
-                    entries.add(ModBlocks.DEEPSLATE_JADE_ORE);
+                    entries.add(ModItems.JADE_CHISEL);
+                    entries.add(ModItems.JADE_TOKEN);
+
+                    //Jade weapons
+                    entries.add(ModItems.JADE_TALES);
+                    entries.add(ModItems.JADE_DAGGER);
+                    entries.add(ModItems.JADE_SHIELD);
+
+
+                    //Boss weapons
+                    entries.add(ModItems.DUSTWORM_BOW);
+
+
+                    //Storm items
+                    entries.add(ModItems.REINFORCED_BOTTLE);
+                    entries.add(ModItems.THUNDER_BOTTLE);
+
+                    //Storm weapons
+                    entries.add(ModItems.STORM_DAGGER);
                 })
                 .build());
 

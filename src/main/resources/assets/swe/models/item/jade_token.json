@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-     "layer0": "swe:item/golden_hilt"
+    "layer0": "swe:item/jade_token"
   }
-
 }
