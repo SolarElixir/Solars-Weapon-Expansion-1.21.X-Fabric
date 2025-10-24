@@ -5,9 +5,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -24,8 +22,15 @@ public static final Block DEEPSLATE_JADE_ORE = registerBlock("deepslate_jade_ore
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(3F, 3.0F).instrument(NoteBlockInstrument.BASEDRUM)
                             .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block JADE_BLOCK = registerBlock("jade_block",
+            new Block(AbstractBlock.Settings.create().strength(2F, 2.0F).requiresTool().sounds(BlockSoundGroup.METAL)));
+public static final Block GEMSTONE_INFUSER = registerBlock("gemstone_infuser",
+        new Block(AbstractBlock.Settings.create().strength(1.0f, 1.0f).sounds(BlockSoundGroup.WOOD))
+        );
 
-private static Block registerBlock(String name, Block block){
+
+//Block Register
+    private static Block registerBlock(String name, Block block){
     registerBlockItems(name, block);
     return Registry.register(Registries.BLOCK, Identifier.of(SolarsWeaponExpansion.MOD_ID, name), block);
 }
@@ -43,8 +48,8 @@ public static void registerBlockItems(String name, Block block) {
 
             entries.add(DEEPSLATE_JADE_ORE);
             entries.add(JADE_ORE);
-
-
+            entries.add(JADE_BLOCK);
+            entries.add(GEMSTONE_INFUSER);
         });
     }
 }

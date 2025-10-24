@@ -10,11 +10,12 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class Jade_Chisel extends Item {
+public class jade_chisel extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.STONE, Blocks.STONE_BRICKS),
@@ -33,7 +34,8 @@ public class Jade_Chisel extends Item {
                     Map.entry(Blocks.NETHERRACK, Blocks.NETHER_BRICKS),
                     Map.entry(Blocks.NETHER_BRICKS, Blocks.CRACKED_NETHER_BRICKS),
                     Map.entry(Blocks.CRACKED_NETHER_BRICKS, Blocks.CHISELED_NETHER_BRICKS),
-                    Map.entry(Blocks.CHISELED_NETHER_BRICKS, Blocks.NETHERRACK),
+                    Map.entry(Blocks.CHISELED_NETHER_BRICKS, Blocks.RED_NETHER_BRICKS),
+                    Map.entry(Blocks.RED_NETHER_BRICKS, Blocks.NETHERRACK),
 
                     Map.entry(Blocks.COBBLED_DEEPSLATE, Blocks.DEEPSLATE_BRICKS),
                     Map.entry(Blocks.DEEPSLATE_BRICKS, Blocks.CRACKED_DEEPSLATE_BRICKS),
@@ -93,8 +95,8 @@ public class Jade_Chisel extends Item {
             );
 
 
-    public Jade_Chisel(Settings settings) {
-        super(settings);
+    public jade_chisel(Settings settings) {
+        super(settings.rarity(Rarity.EPIC));
     }
 
     @Override
@@ -109,7 +111,7 @@ public class Jade_Chisel extends Item {
                 context.getStack().damage(1, ((ServerWorld) world),((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_SMITHING_TABLE_USE, SoundCategory.BLOCKS);
             }
         }
 

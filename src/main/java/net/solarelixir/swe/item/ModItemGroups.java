@@ -13,14 +13,16 @@ import net.solarelixir.swe.block.ModBlocks;
 public class ModItemGroups {
 public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.ITEM_GROUP,
         Identifier.of(SolarsWeaponExpansion.MOD_ID, "solars_weapons_mod"),
-        FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.JADE_BLADE))
+        FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.JADE_TOKEN))
                 .displayName(Text.translatable("itemgroup.swe.solars_weapons_mod"))
                 .entries((displayContext, entries) -> {
-                    //Jade items
-                    entries.add(ModItems.JADE_BLADE);
+                    //Important blocks
+                    entries.add(ModBlocks.GEMSTONE_INFUSER);
 
+                    //Jade items and blocks
                     entries.add(ModBlocks.JADE_ORE);
                     entries.add(ModBlocks.DEEPSLATE_JADE_ORE);
+                    entries.add(ModBlocks.JADE_BLOCK);
 
                     entries.add(ModItems.PERFECT_JADE);
                     entries.add(ModItems.REFINED_JADE);
@@ -32,6 +34,7 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
                     entries.add(ModItems.JADE_TALES);
                     entries.add(ModItems.JADE_DAGGER);
                     entries.add(ModItems.JADE_SHIELD);
+                    entries.add(ModItems.JADE_CLAYMORE);
 
 
                     //Boss weapons
@@ -44,6 +47,16 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
 
                     //Storm weapons
                     entries.add(ModItems.STORM_DAGGER);
+
+                    //Spiritus items
+                    entries.add(ModItems.SPIRITUS_CONDUIT);
+
+                    //Hybrid weapons
+                    entries.add(ModItems.BLACKWIND_SPEAR);
+                    entries.add(ModItems.SILVER_ONI_MASK);
+
+                    //Steel items
+                    entries.add(ModItems.STEEL_INGOT);
                 })
                 .build());
 
