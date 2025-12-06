@@ -16,6 +16,7 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
         FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.JADE_TOKEN))
                 .displayName(Text.translatable("itemgroup.swe.solars_weapons_mod"))
                 .entries((displayContext, entries) -> {
+
                     //Important blocks
                     entries.add(ModBlocks.GEMSTONE_INFUSER);
 
@@ -24,22 +25,61 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
                     entries.add(ModBlocks.DEEPSLATE_JADE_ORE);
                     entries.add(ModBlocks.JADE_BLOCK);
 
-                    entries.add(ModItems.PERFECT_JADE);
-                    entries.add(ModItems.REFINED_JADE);
                     entries.add(ModItems.IMPURE_JADE_CHUNK);
-                    entries.add(ModItems.JADE_CHISEL);
+                    entries.add(ModItems.REFINED_JADE);
+                    entries.add(ModItems.PERFECT_JADE);
                     entries.add(ModItems.JADE_TOKEN);
+
+                    //Jade tools
+                    entries.add(ModItems.JADE_CHISEL);
 
                     //Jade weapons
                     entries.add(ModItems.JADE_TALES);
                     entries.add(ModItems.JADE_DAGGER);
-                    entries.add(ModItems.JADE_SHIELD);
+                    entries.add(ModItems.JADE_SWORD);
+                    //entries.add(ModItems.JADE_LONGSWORD);
                     entries.add(ModItems.JADE_CLAYMORE);
+                    entries.add(ModItems.JADE_SHIELD);
+
+
+
+                    //Ruby items/blocks
+                    entries.add(ModBlocks.RUBY_ORE);
+                    entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+
+                    //Aquamarine items/blocks
+                    entries.add(ModBlocks.AQUAMARINE_ORE);
+                    entries.add(ModBlocks.DEEPSLATE_AQUAMARINE_ORE);
+                    entries.add(ModItems.IMPURE_AQUAMARINE_CHUNK);
+                    entries.add(ModItems.REFINED_AQUAMARINE);
+                    entries.add(ModItems.FLAWLESS_AQUAMARINE);
+
+                    //Citrine items/blocks
+                    entries.add(ModBlocks.TOPAZ_ORE);
+                    entries.add(ModBlocks.DEEPSLATE_TOPAZ_ORE);
+                    entries.add(ModItems.FLAWLESS_CITRINE);
+
+
+                    //Onyx items/blocks
+                    entries.add(ModBlocks.ONYX_ORE);
+                    entries.add(ModBlocks.DEEPSLATE_ONYX_ORE);
+                    entries.add(ModBlocks.ONYX_BLOCK);
+
+                    entries.add(ModItems.IMPURE_ONYX_CHUNK);
+                    entries.add(ModItems.REFINED_ONYX);
+                    entries.add(ModItems.FLAWLESS_ONYX);
+                    entries.add(ModItems.ONYX_TOKEN);
+
+                    entries.add(ModItems.ONYX_DAGGER);
+                    //entries.add(ModItems.ONYX_SWORD);
+                    entries.add(ModItems.ONYX_LONGSWORD);
+                    //entries.add(ModItems.ONYX_CLAYMORE);
+                    entries.add(ModItems.ONYX_KATANA);
+                    entries.add(ModItems.ONYX_SCYTHE);
 
 
                     //Boss weapons
-                    entries.add(ModItems.DUSTWORM_BOW);
-
+                    entries.add(ModItems.DUSTWORM_LONGBOW);
 
                     //Storm items
                     entries.add(ModItems.REINFORCED_BOTTLE);
@@ -57,6 +97,9 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
 
                     //Steel items
                     entries.add(ModItems.STEEL_INGOT);
+
+                    //Steel weapons
+                    entries.add(ModItems.STEEL_KATANA);
                 })
                 .build());
 

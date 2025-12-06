@@ -1,16 +1,19 @@
 {
   "tooltip.swe.no_shift": "§7<Hold §8[§6Shift§8]§7 for §6Ability §7info>",
   "tooltip.swe.alter_skill": "§o§fWeapons Alter Skill:",
+  "tooltip.swe.souls_stored": "Souls stored: %s/%s",
 
   "block.swe.gemstone_infuser": "Gemstone Infuser",
 
+  "block.swe.jade_ore": "Jade Ore",
+  "block.swe.deepslate_jade_ore": "Deepslate Jade Ore",
+  "block.swe.jade_block": "Imperial Jade Block",
   "item.swe.impure_jade_chunk": "Impure Jade Chunk",
   "item.swe.refined_jade": "Refine Jade Stone",
   "item.swe.perfect_jade": "Imperial Jade",
-  "item.swe.jade_blade": "Jade Blade",
-  "item.swe.jade_chisel": "Jade Chisel",
   "item.swe.jade_token": "Jade Token",
 
+  "item.swe.jade_chisel": "Jade Chisel",
 
   "item.swe.jade_dagger": "Jade Dagger",
   "tooltip.swe.jade_dagger0": "§eHi! I'm a §ka§eplaceholder text for the Jade dagger!§ka",
@@ -20,14 +23,61 @@
   "item.swe.jade_tales": "Tales of the Jaded Jungle",
   "item.swe.jade_shield": "Jade Shield",
   "item.swe.jade_claymore": "Jade Claymore",
+  "item.swe.jade_sword": "Jade Sword",
 
 
-  "block.swe.jade_ore": "Jade Ore",
-  "block.swe.deepslate_jade_ore": "Deepslate Jade Ore",
-  "block.swe.jade_block": "Imperial Jade Block",
 
 
-  "item.swe.dustworm_bow": "Dustworm Bow",
+  "block.swe.ruby_ore": "Ruby Ore",
+  "block.swe.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+
+  "block.swe.aquamarine_ore": "Aquamarine Ore",
+  "block.swe.deepslate_aquamarine_ore": "Deepslate Aquamarine Ore",
+  "item.swe.impure_aquamarine_chunk": "Impure Aquamarine Chunk",
+  "item.swe.refined_aquamarine": "Refined Aquamarine",
+  "item.swe.flawless_aquamarine": "Flawless Aquamarine",
+
+
+  "block.swe.topaz_ore": "Topaz Ore",
+  "block.swe.deepslate_topaz_ore": "Deepslate Topaz Ore",
+
+
+  "block.swe.onyx_ore": "Onyx Ore",
+  "block.swe.deepslate_onyx_ore": "Deepslate Onyx Ore",
+  "block.swe.onyx_block": "Onyx Block",
+  "item.swe.impure_onyx_chunk": "Impure Onyx Chunk",
+  "item.swe.refined_onyx": "Refined Onyx",
+  "item.swe.flawless_onyx": "Flawless Onyx",
+  "item.swe.onyx_token": "Onyx Token",
+
+  "item.swe.onyx_dagger": "Onyx Dagger",
+  "item.swe.onyx_longsword": "Onyx Longsword",
+  "item.swe.onyx_scythe": "Onyx Scythe",
+
+  "item.swe.onyx_katana": "Onyx Katana",
+  "tooltip.swe.onyx_katana0": "",
+  "tooltip.swe.onyx_katana1": "§4§lYokai §fHunter",
+  "tooltip.swe.onyx_katana2": "§7Grants increased damage",
+  "tooltip.swe.onyx_katana3": "§7to undead and demons",
+  "tooltip.swe.onyx_katana4": "",
+  "tooltip.swe.onyx_katana5": "§8§lShadow Step",
+  "tooltip.swe.onyx_katana6": "§7Dash forward hurting and",
+  "tooltip.swe.onyx_katana7": "§7blinding enemies in your path",
+  "tooltip.swe.onyx_katana8": "",
+  "tooltip.swe.onyx_katana9": "§8§lTearing Darkness",
+  "tooltip.swe.onyx_katana10": "§7Every 4th attack send a",
+  "tooltip.swe.onyx_katana11": "§7short-ranged slice of darkness",
+  "tooltip.swe.onyx_katana12": "",
+  "tooltip.swe.onyx_katana13": "§4§lSamurai's Pride",
+  "tooltip.swe.onyx_katana14": "§7You may not use shields",
+  "tooltip.swe.onyx_katana15": "§7but you gain strength 1",
+  "tooltip.swe.onyx_katana16": "§7and strength 2 when below 50% HP",
+  "tooltip.swe.onyx_katana17": "§8(Other offhand items are allowed)",
+  "tooltip.swe.onyx_katana18": "",
+
+
+  "item.swe.dustworm_longbow": "Dustworm Longbow",
 
 
   "item.swe.reinforced_bottle": "Reinforced Bottle",
@@ -56,6 +106,7 @@
   "tooltip.swe.silver_oni_mask": "",
 
   "item.swe.steel_ingot": "Steel Ingot",
+  "item.swe.steel_katana": "Steel Katana",
 
-  "itemgroup.swe.solars_weapons_mod": "Solar's Weapons Expansion"
+  "itemgroup.swe.solars_weapons_mod": "Solar's Weapon Expansion"
 }

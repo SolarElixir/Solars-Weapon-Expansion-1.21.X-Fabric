@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class jade_chisel extends Item {
+public class JadeChisel extends Item {
     private static final Map<Block, Block> CHISEL_MAP =
             Map.ofEntries(
                     Map.entry(Blocks.STONE, Blocks.STONE_BRICKS),
@@ -95,7 +95,7 @@ public class jade_chisel extends Item {
             );
 
 
-    public jade_chisel(Settings settings) {
+    public JadeChisel(Settings settings) {
         super(settings.rarity(Rarity.EPIC));
     }
 
