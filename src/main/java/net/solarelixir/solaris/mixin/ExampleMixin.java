@@ -1,4 +1,4 @@
-package net.solarelixir.swe.mixin;
+package net.solarelixir.solaris.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

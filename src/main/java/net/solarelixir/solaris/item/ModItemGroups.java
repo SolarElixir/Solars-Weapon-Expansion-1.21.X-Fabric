@@ -1,4 +1,4 @@
-package net.solarelixir.swe.item;
+package net.solarelixir.solaris.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -7,18 +7,18 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.solarelixir.swe.SolarsWeaponExpansion;
-import net.solarelixir.swe.block.ModBlocks;
+import net.solarelixir.solaris.TelumSolaris;
+import net.solarelixir.solaris.block.ModBlocks;
 
 public class ModItemGroups {
-public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.ITEM_GROUP,
-        Identifier.of(SolarsWeaponExpansion.MOD_ID, "solars_weapons_mod"),
+public static final ItemGroup TELUM_SOLARIS = Registry.register(Registries.ITEM_GROUP,
+        Identifier.of(TelumSolaris.MOD_ID, "telum_solaris"),
         FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.JADE_TOKEN))
-                .displayName(Text.translatable("itemgroup.swe.solars_weapons_mod"))
+                .displayName(Text.translatable("itemgroup.solaris.telum_solaris"))
                 .entries((displayContext, entries) -> {
 
                     //Important blocks
-                    entries.add(ModBlocks.GEMSTONE_INFUSER);
+                    //entries.add(ModBlocks.GEMSTONE_INFUSER);
 
                     //Jade items and blocks
                     entries.add(ModBlocks.JADE_ORE);
@@ -96,14 +96,24 @@ public static final ItemGroup SOLARS_WEAPONS_MOD = Registry.register(Registries.
                     entries.add(ModItems.SILVER_ONI_MASK);
 
                     //Steel items
-                    entries.add(ModItems.STEEL_INGOT);
-
-                    //Steel weapons
+                    entries.add(ModItems.STEEL_HELMET);
+                    entries.add(ModItems.STEEL_CHESTPLATE);
+                    entries.add(ModItems.STEEL_LEGGINGS);
+                    entries.add(ModItems.STEEL_BOOTS);
+                    entries.add(ModItems.STEEL);
+                    entries.add(ModBlocks.STEEL_BLOCK);
+                    entries.add(ModItems.STEEL_SWORD);
+                    entries.add(ModItems.STEEL_DAGGER);
                     entries.add(ModItems.STEEL_KATANA);
+                    entries.add(ModItems.STEEL_LONGSWORD);
+                    entries.add(ModItems.STEEL_HALBERD);
+                    entries.add(ModItems.STEEL_SCYTHE);
+                    entries.add(ModItems.STEEL_SHIELD);
+
                 })
                 .build());
 
 
     public static void registerItemGroups() {
-        SolarsWeaponExpansion.LOGGER.info("registering Item Groups for" + SolarsWeaponExpansion.MOD_ID);}
+        TelumSolaris.LOGGER.info("registering Item Groups for " + TelumSolaris.MOD_ID);}
 }

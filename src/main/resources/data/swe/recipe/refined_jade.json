@@ -5,9 +5,9 @@
   "experience": 0.2,
   "group": "refined_jade",
   "ingredient": {
-    "item": "swe:impure_jade_chunk"
+    "item": "solaris:impure_jade_chunk"
   },
   "result": {
-    "id": "swe:refined_jade"
+    "id": "solaris:refined_jade"
   }
 }

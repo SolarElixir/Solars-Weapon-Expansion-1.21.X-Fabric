@@ -3,10 +3,10 @@
 	"credit": "Made with Blockbench by SolarElixir",
 	"texture_size": [8, 8],
 	"textures": {
-		"0": "swe:item/storm_dagger/thunder_dagger_blade_txt",
-		"1": "swe:item/storm_dagger/thunder_dagger_hilt_txt",
-		"2": "swe:item/storm_dagger/thunder_dagger_bottom_txt",
-		"particle": "swe:item/storm_dagger/thunder_dagger_blade_txt"
+		"0": "solaris:item/storm_dagger/thunder_dagger_blade_txt",
+		"1": "solaris:item/storm_dagger/thunder_dagger_hilt_txt",
+		"2": "solaris:item/storm_dagger/thunder_dagger_bottom_txt",
+		"particle": "solaris:item/storm_dagger/thunder_dagger_blade_txt"
 	},
 	"elements": [
 		{

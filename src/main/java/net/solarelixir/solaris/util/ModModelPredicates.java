@@ -1,4 +1,4 @@
-package net.solarelixir.swe.util;
+package net.solarelixir.solaris.util;
 
 import net.minecraft.item.Item;
 

@@ -1,8 +1,8 @@
-package net.solarelixir.swe;
+package net.solarelixir.solaris;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class SWEClient implements ClientModInitializer {
+public class solarisClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 

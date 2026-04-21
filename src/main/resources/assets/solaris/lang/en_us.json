@@ -1,0 +1,124 @@
+{
+  "tooltip.solaris.no_shift": "§7<Hold §8[§6Shift§8]§7 for §6Ability §7info>",
+  "tooltip.solaris.alter_skill": "§o§fWeapons Alter Skill:",
+  "tooltip.solaris.souls_stored": "Souls stored: %s/%s",
+
+  "block.solaris.gemstone_infuser": "Gemstone Infuser",
+
+  "block.solaris.jade_ore": "Jade Ore",
+  "block.solaris.deepslate_jade_ore": "Deepslate Jade Ore",
+  "block.solaris.jade_block": "Imperial Jade Block",
+  "item.solaris.impure_jade_chunk": "Impure Jade Chunk",
+  "item.solaris.refined_jade": "Refine Jade Stone",
+  "item.solaris.perfect_jade": "Imperial Jade",
+  "item.solaris.jade_token": "Jade Token",
+
+  "item.solaris.jade_chisel": "Jade Chisel",
+
+  "item.solaris.jade_dagger": "Jade Dagger",
+  "tooltip.solaris.jade_dagger0": "§eHi! I'm a §ka§eplaceholder text for the Jade dagger!§ka",
+  "tooltip.solaris.jade_dagger1": "Does this work???",
+  "tooltip.solaris.jade_dagger2": "This wont work!",
+
+  "item.solaris.jade_tales": "Tales of the Jaded Jungle",
+  "item.solaris.jade_shield": "Jade Shield",
+  "item.solaris.jade_claymore": "Jade Claymore",
+  "item.solaris.jade_sword": "Jade Sword",
+
+
+
+
+  "block.solaris.ruby_ore": "Ruby Ore",
+  "block.solaris.deepslate_ruby_ore": "Deepslate Ruby Ore",
+
+
+  "block.solaris.aquamarine_ore": "Aquamarine Ore",
+  "block.solaris.deepslate_aquamarine_ore": "Deepslate Aquamarine Ore",
+  "item.solaris.impure_aquamarine_chunk": "Impure Aquamarine Chunk",
+  "item.solaris.refined_aquamarine": "Refined Aquamarine",
+  "item.solaris.flawless_aquamarine": "Flawless Aquamarine",
+
+
+  "block.solaris.topaz_ore": "Topaz Ore",
+  "block.solaris.deepslate_topaz_ore": "Deepslate Topaz Ore",
+
+
+  "block.solaris.onyx_ore": "Onyx Ore",
+  "block.solaris.deepslate_onyx_ore": "Deepslate Onyx Ore",
+  "block.solaris.onyx_block": "Onyx Block",
+  "item.solaris.impure_onyx_chunk": "Impure Onyx Chunk",
+  "item.solaris.refined_onyx": "Refined Onyx",
+  "item.solaris.flawless_onyx": "Flawless Onyx",
+  "item.solaris.onyx_token": "Onyx Token",
+
+  "item.solaris.onyx_dagger": "Onyx Dagger",
+  "item.solaris.onyx_longsword": "Onyx Longsword",
+  "item.solaris.onyx_scythe": "Onyx Scythe",
+
+  "item.solaris.onyx_katana": "Onyx Katana",
+  "tooltip.solaris.onyx_katana0": "",
+  "tooltip.solaris.onyx_katana1": "§4§lYokai §fHunter",
+  "tooltip.solaris.onyx_katana2": "§7Grants increased damage",
+  "tooltip.solaris.onyx_katana3": "§7to undead and demons",
+  "tooltip.solaris.onyx_katana4": "",
+  "tooltip.solaris.onyx_katana5": "§8§lShadow Step",
+  "tooltip.solaris.onyx_katana6": "§7Dash forward hurting and",
+  "tooltip.solaris.onyx_katana7": "§7blinding enemies in your path",
+  "tooltip.solaris.onyx_katana8": "",
+  "tooltip.solaris.onyx_katana9": "§8§lTearing Darkness",
+  "tooltip.solaris.onyx_katana10": "§7Every 4th attack send a",
+  "tooltip.solaris.onyx_katana11": "§7short-ranged slice of darkness",
+  "tooltip.solaris.onyx_katana12": "",
+  "tooltip.solaris.onyx_katana13": "§4§lSamurai's Pride",
+  "tooltip.solaris.onyx_katana14": "§7You may not use shields",
+  "tooltip.solaris.onyx_katana15": "§7but you gain strength 1",
+  "tooltip.solaris.onyx_katana16": "§7and strength 2 when below 50% HP",
+  "tooltip.solaris.onyx_katana17": "§8(Other offhand items are allowed)",
+  "tooltip.solaris.onyx_katana18": "",
+
+
+  "item.solaris.dustworm_longbow": "Dustworm Longbow",
+
+
+  "item.solaris.reinforced_bottle": "Reinforced Bottle",
+  "item.solaris.thunder_bottle": "Thunder in a Bottle",
+
+  "item.solaris.storm_dagger": "Storm Dagger",
+
+  "item.solaris.spiritus_conduit": "Spiritus Conduit",
+
+  "item.solaris.blackwind_spear": "§8§lBlack§fwind",
+  "tooltip.solaris.blackwind_spear0": "",
+  "tooltip.solaris.blackwind_spear1": "§lWindborne:",
+  "tooltip.solaris.blackwind_spear2": "§7Grants jump boost",
+  "tooltip.solaris.blackwind_spear3": "",
+  "tooltip.solaris.blackwind_spear4": "§2§lDark Domain:",
+  "tooltip.solaris.blackwind_spear5": "§n§8Weapons Alter Skill:",
+  "tooltip.solaris.blackwind_spear6": "",
+  "tooltip.solaris.blackwind_spear7": "§7While active, when attacking while mid-air",
+  "tooltip.solaris.blackwind_spear8": "§7allows you to slam into the ground,",
+  "tooltip.solaris.blackwind_spear9": "§7hurting enemies in a range of 4 blocks",
+  "tooltip.solaris.blackwind_spear10": "§7from the centre of your attack",
+  "tooltip.solaris.blackwind_spear11": "§8Active ability: Shift+Right click",
+  "tooltip.solaris.blackwind_spear12": "",
+
+  "item.solaris.silver_oni_mask": "Silver Oni Mask",
+  "tooltip.solaris.silver_oni_mask": "",
+
+  "item.solaris.steel_helmet": "Steel Helmet",
+  "item.solaris.steel_chestplate": "Steel Chestplate",
+  "item.solaris.steel_leggings": "Steel Leggings",
+  "item.solaris.steel_boots": "Steel Boots",
+
+  "item.solaris.steel": "Steel",
+  "block.solaris.steel_block": "Steel Block",
+  "item.solaris.steel_sword": "Steel Sword",
+  "item.solaris.steel_dagger": "Steel Dagger",
+  "item.solaris.steel_katana": "Steel Katana",
+  "item.solaris.steel_longsword": "Steel Longsword",
+  "item.solaris.steel_halberd": "Steel Halberd",
+  "item.solaris.steel_scythe": "Steel Scythe",
+  "item.solaris.steel_shield": "Steel Shield",
+
+  "itemgroup.solaris.telum_solaris": "Telum Solaris"
+}

@@ -1,4 +1,4 @@
-package net.solarelixir.swe.item.custom;
+package net.solarelixir.solaris.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

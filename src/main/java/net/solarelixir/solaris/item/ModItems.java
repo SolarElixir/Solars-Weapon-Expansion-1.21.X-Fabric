@@ -1,15 +1,22 @@
-package net.solarelixir.swe.item;
+package net.solarelixir.solaris.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.solarelixir.swe.SolarsWeaponExpansion;
-import net.solarelixir.swe.item.custom.*;
+import net.solarelixir.solaris.TelumSolaris;
+import net.solarelixir.solaris.block.ModBlocks;
+import net.solarelixir.solaris.item.custom.*;
 
 
 public class ModItems {
+
+    private static float fastAttackSpeed = -2f;
+    private static float mediumAttackSpeed = -2.4f;
+    private static float slowAttackSpeed = -2.8f;
+    private static float verySlowAttackSpeed = -3.2f;
+
     //Jade items
         public static final Item IMPURE_JADE_CHUNK = registerItem("impure_jade_chunk", new Item(new Item.Settings()));
         public static final Item REFINED_JADE = registerItem("refined_jade", new Item(new Item.Settings()));
@@ -71,19 +78,37 @@ public class ModItems {
         public static final Item SILVER_ONI_MASK = registerItem("silver_oni_mask", new Item(new Item.Settings()));
 
     //Steel items
-        public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
-
-    //Steel Weapons
+        public static final Item STEEL = registerItem("steel", new Item(new Item.Settings()));
+        public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 3, mediumAttackSpeed))));
         public static final Item STEEL_KATANA = registerItem("steel_katana", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
-            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 6, -2.2F))));
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 3, mediumAttackSpeed))));
+        public static final Item STEEL_DAGGER = registerItem("steel_dagger", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 2, fastAttackSpeed))));
+        public static final Item STEEL_LONGSWORD = registerItem("steel_longsword", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 5, slowAttackSpeed))));
+        public static final Item STEEL_HALBERD = registerItem("steel_halberd", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 6, verySlowAttackSpeed))));
+        public static final Item STEEL_SCYTHE = registerItem("steel_scythe", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 5, verySlowAttackSpeed))));
+        public static final Item STEEL_SHIELD = registerItem("steel_shield", new ShieldItem(new Item.Settings().maxCount(1)));
+
+        public static final Item STEEL_HELMET = registerItem("steel_helmet", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(17))));
+        public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(17))));
+        public static final Item STEEL_LEGGINGS = registerItem("steel_leggings", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(17))));
+        public static final Item STEEL_BOOTS = registerItem("steel_boots", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(17))));
 
     //register
 private static Item registerItem(String name, Item item) {
-    return Registry.register(Registries.ITEM, Identifier.of(SolarsWeaponExpansion.MOD_ID, name), item);
+    return Registry.register(Registries.ITEM, Identifier.of(TelumSolaris.MOD_ID, name), item);
 }
 
     public static void registerModItems () {
-    SolarsWeaponExpansion.LOGGER.info("Registering Mod Items for " + SolarsWeaponExpansion.MOD_ID);
+    TelumSolaris.LOGGER.info("Registering Mod Items for " + TelumSolaris.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             //JADE
@@ -116,7 +141,7 @@ private static Item registerItem(String name, Item item) {
             entries.add(SPIRITUS_CONDUIT);
 
             //STEEL
-            entries.add(STEEL_INGOT);
+            entries.add(STEEL);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             //JADE
@@ -136,7 +161,18 @@ private static Item registerItem(String name, Item item) {
             entries.add(ONYX_KATANA);
 
             //STEEL
+            entries.add(STEEL_HELMET);
+            entries.add(STEEL_CHESTPLATE);
+            entries.add(STEEL_LEGGINGS);
+            entries.add(STEEL_BOOTS);
+
+            entries.add(STEEL_DAGGER);
+            entries.add(STEEL_SWORD);
             entries.add(STEEL_KATANA);
+            entries.add(STEEL_LONGSWORD);
+            entries.add(STEEL_HALBERD);
+            entries.add(STEEL_SCYTHE);
+            entries.add(STEEL_SHIELD);
 
             entries.add(DUSTWORM_LONGBOW);
 
@@ -148,5 +184,6 @@ private static Item registerItem(String name, Item item) {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(JADE_CHISEL);
         });
+
     }
 }

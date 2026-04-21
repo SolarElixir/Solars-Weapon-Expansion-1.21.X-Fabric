@@ -3,10 +3,10 @@
 	"credit": "Made with Blockbench by SolarElixir",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "swe:item/jade_tales/jade_tales",
-		"1": "swe:item/jade_tales/jade_tales_binding",
-		"2": "swe:item/jade_tales/jade_tales_pages",
-		"3": "swe:item/jade_tales/jade_tales_pages_loose",
+		"0": "solaris:item/jade_tales/jade_tales",
+		"1": "solaris:item/jade_tales/jade_tales_binding",
+		"2": "solaris:item/jade_tales/jade_tales_pages",
+		"3": "solaris:item/jade_tales/jade_tales_pages_loose",
 		"particle": "item/jade_tales/jade_tales"
 	},
 	"elements": [

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "swe:deepslate_jade_ore",
-    "swe:jade_ore"
+    "solaris:deepslate_jade_ore",
+    "solaris:jade_ore"
   ]
 }

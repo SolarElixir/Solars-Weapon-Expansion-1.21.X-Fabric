@@ -2,9 +2,9 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench by SolarElixir!",
 	"textures": {
-		"0": "swe:item/jade_shield/jade_shield_sides",
-		"1": "swe:item/jade_shield/jade_shield_front",
-		"2": "swe:item/jade_shield/jade_shield_handle",
+		"0": "solaris:item/jade_shield/jade_shield_sides",
+		"1": "solaris:item/jade_shield/jade_shield_front",
+		"2": "solaris:item/jade_shield/jade_shield_handle",
 		"particle": "jade_shield_sides"
 	},
 	"elements": [

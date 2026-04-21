@@ -1,21 +1,21 @@
-package net.solarelixir.swe;
+package net.solarelixir.solaris;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.solarelixir.swe.block.ModBlocks;
-import net.solarelixir.swe.component.ModDataComponentTypes;
-import net.solarelixir.swe.component.SoulStoringCodec;
-import net.solarelixir.swe.item.ModItemGroups;
-import net.solarelixir.swe.item.ModItems;
-import net.solarelixir.swe.util.ModTags;
+import net.solarelixir.solaris.block.ModBlocks;
+import net.solarelixir.solaris.component.ModDataComponentTypes;
+import net.solarelixir.solaris.component.SoulStoringCodec;
+import net.solarelixir.solaris.item.ModItemGroups;
+import net.solarelixir.solaris.item.ModItems;
+import net.solarelixir.solaris.util.ModTags;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 
 
-public class SolarsWeaponExpansion implements ModInitializer {
-	public static final String MOD_ID = "swe";
+public class TelumSolaris implements ModInitializer {
+	public static final String MOD_ID = "solaris";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override

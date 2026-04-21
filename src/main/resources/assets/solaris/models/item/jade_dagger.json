@@ -2,9 +2,9 @@
 	"format_version": "1.9.0",
 	"credit": "Made with Blockbench by SolarElixir",
 	"textures": {
-		"0": "swe:item/jade_dagger/jade_dagger_blade_txt",
-		"1": "swe:item/jade_dagger/jade_dagger_handle_txt",
-		"2": "swe:item/jade_dagger/jade_dagger_handle2_txt"
+		"0": "solaris:item/jade_dagger/jade_dagger_blade_txt",
+		"1": "solaris:item/jade_dagger/jade_dagger_handle_txt",
+		"2": "solaris:item/jade_dagger/jade_dagger_handle2_txt"
 	},
 	"elements": [
 		{

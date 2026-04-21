@@ -1,4 +1,4 @@
-package net.solarelixir.swe.block;
+package net.solarelixir.solaris.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.solarelixir.swe.SolarsWeaponExpansion;
+import net.solarelixir.solaris.TelumSolaris;
 
 public class ModBlocks {
     //Jade Blocks
@@ -65,26 +65,29 @@ public static final Block DEEPSLATE_JADE_ORE = registerBlock("deepslate_jade_ore
     public static final Block GEMSTONE_INFUSER = registerBlock("gemstone_infuser",
             new Block(AbstractBlock.Settings.create().strength(1.0f, 1.0f)
                     .requiresTool().sounds(BlockSoundGroup.WOOD)));
+
+    public static final  Block STEEL_BLOCK = registerBlock("steel_block",
+            new Block(AbstractBlock.Settings.create().strength(2, 2).requiresTool().sounds(BlockSoundGroup.METAL)));
 //Block Register
     private static Block registerBlock(String name, Block block){
     registerBlockItems(name, block);
-    return Registry.register(Registries.BLOCK, Identifier.of(SolarsWeaponExpansion.MOD_ID, name), block);
+    return Registry.register(Registries.BLOCK, Identifier.of(TelumSolaris.MOD_ID, name), block);
 }
 
 
 
 public static void registerBlockItems(String name, Block block) {
-    Registry.register(Registries.ITEM, Identifier.of(SolarsWeaponExpansion.MOD_ID, name),
+    Registry.register(Registries.ITEM, Identifier.of(TelumSolaris.MOD_ID, name),
             new BlockItem(block, new Item.Settings()));
 }
 
     public static void registerModBlocks(){
-        SolarsWeaponExpansion.LOGGER.info("Registering Mod Blocks for" + SolarsWeaponExpansion.MOD_ID);
+        TelumSolaris.LOGGER.info("Registering Mod Blocks for " + TelumSolaris.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries-> {
 
             entries.add(DEEPSLATE_JADE_ORE);
             entries.add(JADE_ORE);
-            entries.add(JADE_BLOCK);
+
 
             entries.add(RUBY_ORE);
             entries.add(DEEPSLATE_RUBY_ORE);
@@ -97,9 +100,14 @@ public static void registerBlockItems(String name, Block block) {
 
             entries.add(ONYX_ORE);
             entries.add(DEEPSLATE_ONYX_ORE);
-            entries.add(ONYX_BLOCK);
+
 
             entries.add(GEMSTONE_INFUSER);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(STEEL_BLOCK);
+            entries.add(JADE_BLOCK);
+            entries.add(ONYX_BLOCK);
         });
     }
 }
