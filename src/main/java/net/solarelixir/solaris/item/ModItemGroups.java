@@ -110,6 +110,11 @@ public static final ItemGroup TELUM_SOLARIS = Registry.register(Registries.ITEM_
                     entries.add(ModItems.STEEL_SCYTHE);
                     entries.add(ModItems.STEEL_SHIELD);
 
+                    entries.add(ModItems.AMETHYST_HALBERD);
+
+                    entries.add(ModItems.SCARLETT);
+                    entries.add(ModItems.SCARLETT_HAZE);
+
                 })
                 .build());
 

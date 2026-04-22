@@ -101,6 +101,15 @@ public class ModItems {
                 .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(17))));
         public static final Item STEEL_BOOTS = registerItem("steel_boots", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                 .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(17))));
+        // ~
+
+        public static final Item AMETHYST_HALBERD = registerItem("amethyst_halberd", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, 6, verySlowAttackSpeed))));
+
+
+        public static final Item SCARLETT = registerItem("scarlett", new Item(new Item.Settings()));
+        public static final Item SCARLETT_HAZE = registerItem("scarlett_haze", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, 6, slowAttackSpeed))));
 
     //register
 private static Item registerItem(String name, Item item) {
@@ -142,6 +151,9 @@ private static Item registerItem(String name, Item item) {
 
             //STEEL
             entries.add(STEEL);
+
+            entries.add(SCARLETT);
+
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             //JADE
@@ -180,6 +192,10 @@ private static Item registerItem(String name, Item item) {
             entries.add(SILVER_ONI_MASK);
 
             entries.add(STORM_DAGGER);
+
+
+            entries.add(SCARLETT_HAZE);
+            entries.add(AMETHYST_HALBERD);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(JADE_CHISEL);
