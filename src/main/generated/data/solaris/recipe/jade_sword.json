@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "J": {
+      "item": "solaris:perfect_jade"
+    }
+  },
+  "pattern": [
+    "J",
+    "J",
+    "G"
+  ],
+  "result": {
+    "count": 1,
+    "id": "solaris:jade_sword"
+  }
+}

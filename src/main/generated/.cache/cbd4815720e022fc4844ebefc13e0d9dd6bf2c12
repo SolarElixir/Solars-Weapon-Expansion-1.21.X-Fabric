@@ -1,0 +1,5 @@
+// 1.21	2026-04-23T10:15:37.9058642	Solar's Weapon Expansion/Block Loot Tables
+d7a38c27cede14b98709db43d846ff98bb666826 data\solaris\loot_table\blocks\jade_ore.json
+74a97d47a56e12406a407340c3d67bff0889405c data\solaris\loot_table\blocks\steel_block.json
+487bf0681c01cb7576cedbe67a62dc7199f9ae01 data\solaris\loot_table\blocks\deepslate_jade_ore.json
+5b71df070d245212c178c8e292c3c97492dc1b53 data\solaris\loot_table\blocks\jade_block.json

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "solaris:refined_onyx"
+  },
+  "result": {
+    "count": 1,
+    "id": "solaris:flawless_onyx"
+  }
+}

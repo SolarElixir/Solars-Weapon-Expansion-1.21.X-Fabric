@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "-": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "solaris:steel"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " - ",
+    "-  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "solaris:steel_scythe"
+  }
+}

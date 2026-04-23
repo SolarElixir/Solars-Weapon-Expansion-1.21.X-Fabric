@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "solaris:onyx_dagger",
+    "solaris:onyx_longsword",
+    "solaris:onyx_scythe",
+    "solaris:onyx_katana"
+  ]
+}

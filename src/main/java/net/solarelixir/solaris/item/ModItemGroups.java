@@ -34,7 +34,6 @@ public static final ItemGroup TELUM_SOLARIS = Registry.register(Registries.ITEM_
                     entries.add(ModItems.JADE_CHISEL);
 
                     //Jade weapons
-                    entries.add(ModItems.JADE_TALES);
                     entries.add(ModItems.JADE_DAGGER);
                     entries.add(ModItems.JADE_SWORD);
                     //entries.add(ModItems.JADE_LONGSWORD);
@@ -102,8 +101,9 @@ public static final ItemGroup TELUM_SOLARIS = Registry.register(Registries.ITEM_
                     entries.add(ModItems.STEEL_BOOTS);
                     entries.add(ModItems.STEEL);
                     entries.add(ModBlocks.STEEL_BLOCK);
-                    entries.add(ModItems.STEEL_SWORD);
+
                     entries.add(ModItems.STEEL_DAGGER);
+                    entries.add(ModItems.STEEL_SWORD);
                     entries.add(ModItems.STEEL_KATANA);
                     entries.add(ModItems.STEEL_LONGSWORD);
                     entries.add(ModItems.STEEL_HALBERD);

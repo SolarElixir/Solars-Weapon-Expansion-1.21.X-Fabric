@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "-": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "solaris:steel"
+    }
+  },
+  "pattern": [
+    "  S",
+    " S ",
+    "-  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "solaris:steel_longsword"
+  }
+}

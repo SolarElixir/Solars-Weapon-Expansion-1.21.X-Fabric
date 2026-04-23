@@ -7,10 +7,10 @@
 
   "block.solaris.jade_ore": "Jade Ore",
   "block.solaris.deepslate_jade_ore": "Deepslate Jade Ore",
-  "block.solaris.jade_block": "Imperial Jade Block",
+  "block.solaris.jade_block": "Jade Block",
   "item.solaris.impure_jade_chunk": "Impure Jade Chunk",
-  "item.solaris.refined_jade": "Refine Jade Stone",
-  "item.solaris.perfect_jade": "Imperial Jade",
+  "item.solaris.refined_jade": "Refine Jade",
+  "item.solaris.perfect_jade": "Flawless Jade",
   "item.solaris.jade_token": "Jade Token",
 
   "item.solaris.jade_chisel": "Jade Chisel",
@@ -20,7 +20,6 @@
   "tooltip.solaris.jade_dagger1": "Does this work???",
   "tooltip.solaris.jade_dagger2": "This wont work!",
 
-  "item.solaris.jade_tales": "Tales of the Jaded Jungle",
   "item.solaris.jade_shield": "Jade Shield",
   "item.solaris.jade_claymore": "Jade Claymore",
   "item.solaris.jade_sword": "Jade Sword",
