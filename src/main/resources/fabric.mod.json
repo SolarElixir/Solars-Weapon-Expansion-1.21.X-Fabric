@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "solaris",
 	"version": "${version}",
-	"name": "Solar's Weapon Expansion",
+	"name": "Telum Solaris",
 	"description": "My first ever mod aiming to improve weaponry in Minecraft",
 	"authors": [
 		"SolarElixir"

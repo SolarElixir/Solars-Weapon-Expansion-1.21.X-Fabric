@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "J": {
+      "item": "solaris:perfect_jade"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "J J"
+  ],
+  "result": {
+    "count": 1,
+    "id": "solaris:jade_helmet"
+  }
+}

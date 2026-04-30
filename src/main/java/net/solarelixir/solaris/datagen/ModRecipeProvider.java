@@ -30,46 +30,102 @@ public class ModRecipeProvider extends FabricRecipeProvider {
          offerBlasting(exporter, REFINED_JADE_BLASTING, RecipeCategory.MISC, ModItems.REFINED_JADE, 0.25f, 200, "jade_refining");
 
          offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PERFECT_JADE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.JADE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_HELMET)
+                .pattern("JJJ")
+                .pattern("J J")
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_HELMET))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_CHESTPLATE)
+                .pattern("J J")
+                .pattern("JJJ")
+                .pattern("JJJ")
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_CHESTPLATE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_LEGGINGS)
+                .pattern("JJJ")
+                .pattern("J J")
+                .pattern("J J")
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_LEGGINGS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_BOOTS)
+                .pattern("J J")
+                .pattern("J J")
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_BOOTS))
+                .offerTo(exporter);
+
          ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_DAGGER)
-                         .pattern("G")
+                         .pattern("-")
                          .pattern("J")
-                         .pattern("J")
-                         .input('G', Items.GOLD_INGOT)
+                         .input('-', Items.STICK)
                          .input('J', ModItems.PERFECT_JADE)
                          .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_DAGGER))
                          .offerTo(exporter);
 
-         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_SHIELD)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_SWORD)
+                .pattern("J")
+                .pattern("J")
+                .pattern("-")
+                .input('-', Items.STICK)
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_SWORD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_KATANA)
+                .pattern("-JJ")
+                .input('-', Items.STICK)
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE),conditionsFromItem(ModItems.JADE_KATANA))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_GREATSWORD)
+                .pattern("  J")
+                .pattern(" J ")
+                .pattern("-J ")
+                .input('-', Items.STICK)
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_GREATSWORD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_HALBERD)
+                .pattern(" JJ")
+                .pattern("J- ")
+                .pattern("-  ")
+                .input('-', Items.STICK)
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_HALBERD))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_SCYTHE)
+                .pattern("JJJ")
+                .pattern(" - ")
+                .pattern("-  ")
+                .input('-', Items.STICK)
+                .input('J', ModItems.PERFECT_JADE)
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_SCYTHE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_SHIELD)
                 .pattern("GJG")
                 .pattern("GJG")
                 .pattern(" G ")
                 .input('G', Items.GOLD_INGOT)
                 .input('J', ModItems.PERFECT_JADE)
-                 .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_SHIELD))
-                .offerTo(exporter); //If there are  multiple ways to craft an item, use a comma and then name it (like: (exporter, refined_jade_from_smelting)).
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_SWORD)
-                .pattern("J")
-                .pattern("J")
-                .pattern("G")
-                .input('G', Items.GOLD_INGOT)
-                .input('J', ModItems.PERFECT_JADE)
-                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_SWORD))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.JADE_CLAYMORE)
-                .pattern("  J")
-                .pattern(" J ")
-                .pattern("GJ ")
-                .input('G', Items.GOLD_INGOT)
-                .input('J', ModItems.PERFECT_JADE)
-                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_CLAYMORE))
+                .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_SHIELD))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.JADE_CHISEL)
                 .pattern(" J")
-                .pattern("G ")
-                .input('G', Items.GOLD_INGOT)
+                .pattern("- ")
+                .input('-', Items.STICK)
                 .input('J', ModItems.PERFECT_JADE)
                 .criterion(hasItem(ModItems.PERFECT_JADE), conditionsFromItem(ModItems.JADE_CHISEL))
                 .offerTo(exporter);
@@ -163,7 +219,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STEEL),conditionsFromItem(ModItems.STEEL_LONGSWORD))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_HALBERD)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STEEL_HALBERD)
                 .pattern(" SS")
                 .pattern("S- ")
                 .pattern("-  ")
@@ -172,7 +228,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STEEL), conditionsFromItem(ModItems.STEEL_HALBERD))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_SCYTHE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STEEL_SCYTHE)
                 .pattern("SSS")
                 .pattern(" - ")
                 .pattern("-  ")

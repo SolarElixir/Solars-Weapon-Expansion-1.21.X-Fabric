@@ -15,7 +15,7 @@ public class Blackwind extends Item {
     private final CustomTooltips itemTooltipHelper;
     public Blackwind(Settings settings) {
         super(settings);
-        this.itemTooltipHelper = new CustomTooltips("blackwind_spear");
+        this.itemTooltipHelper = new CustomTooltips("blackwind");
     }
 
     @Override
@@ -27,6 +27,7 @@ public class Blackwind extends Item {
             }
         }
     }
+
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type){
         itemTooltipHelper.appendTooltip(stack, tooltip);

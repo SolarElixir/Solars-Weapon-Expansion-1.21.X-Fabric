@@ -2,16 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "G": {
-      "item": "minecraft:gold_ingot"
+    "-": {
+      "item": "minecraft:stick"
     },
     "J": {
       "item": "solaris:perfect_jade"
     }
   },
   "pattern": [
-    "G",
-    "J",
+    "-",
     "J"
   ],
   "result": {

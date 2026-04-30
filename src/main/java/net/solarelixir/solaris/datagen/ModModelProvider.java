@@ -52,14 +52,19 @@ public class ModModelProvider extends FabricModelProvider {
         System.out.println("Generating Item State Models");
         //Jade
         itemModelGenerator.register(ModItems.JADE_CHISEL, Models.HANDHELD);
-
-        itemModelGenerator.register(ModItems.JADE_SWORD, Models.HANDHELD);
-
+        itemModelGenerator.register(ModItems.JADE_KATANA, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.IMPURE_JADE_CHUNK, Models.GENERATED);
         itemModelGenerator.register(ModItems.REFINED_JADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PERFECT_JADE, Models.GENERATED);
         itemModelGenerator.register(ModItems.JADE_TOKEN, Models.GENERATED);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.JADE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.JADE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.JADE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.JADE_BOOTS);
+
+
         //Ruby
 
         //Aquamarine
@@ -86,6 +91,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_BOOTS);
+
 
         itemModelGenerator.register(ModItems.SPIRITUS_CONDUIT, Models.GENERATED);
 

@@ -13,13 +13,16 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
     
     JADE(ModTags.Blocks.INCORRECT_FOR_GEMSTONE_TOOLS,
-            2512, 10.0F, 6.0F, 19, () ->
+            2560, 10.0F, 6.0F, 19, () ->
             Ingredient.ofItems(ModItems.JADE_TOKEN)),
 
     ONYX(ModTags.Blocks.INCORRECT_FOR_GEMSTONE_TOOLS,
-            2512, 10.0F, 6.0F, 19, () ->
+            2560, 10.0F, 6.0F, 19, () ->
             Ingredient.ofItems(ModItems.ONYX_TOKEN)),
 
+    ENERGIZED_JADE(ModTags.Blocks.INCORRECT_FOR_GEMSTONE_TOOLS,
+            2880, 10.0f, 8.0f, 21, () ->
+            Ingredient.ofItems(ModItems.JADE_TOKEN)),
 
     STEEL(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL,
             1024, 7.0f, 2.0F, 14, () ->

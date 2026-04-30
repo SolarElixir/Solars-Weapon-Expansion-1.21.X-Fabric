@@ -8,7 +8,6 @@ import net.minecraft.util.Identifier;
 import net.solarelixir.solaris.TelumSolaris;
 import net.solarelixir.solaris.item.custom.*;
 
-
 public class ModItems {
 
     private static final float fastAttackSpeed = -2f;
@@ -18,8 +17,10 @@ public class ModItems {
 
     private static final int daggerDamage = 2;
     private static final int swordDamage = 3;
+    private static final int katanaDamage = 4;
     private static final int bigSwordDamage = 5;
-    private static final int bigWeaponDamage = 6;
+    private static final int halberdDamage = 6;
+    private static final int scytheDamage = 7;
 
     //Jade items
         public static final Item IMPURE_JADE_CHUNK = registerItem("impure_jade_chunk", new Item(new Item.Settings()));
@@ -48,20 +49,40 @@ public class ModItems {
         public static final Item ONYX_LONGSWORD = registerItem("onyx_longsword", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
                 .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, bigSwordDamage, slowAttackSpeed))));
         public static final Item ONYX_SCYTHE = registerItem("onyx_scythe", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
-            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, bigWeaponDamage, verySlowAttackSpeed))));
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, scytheDamage, verySlowAttackSpeed))));
         public static final Item ONYX_KATANA = registerItem("onyx_katana", new OnyxKatana(ModToolMaterials.ONYX, new Item.Settings()
-                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, swordDamage, mediumAttackSpeed))));
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, katanaDamage, mediumAttackSpeed))));
     //Opal Items
 
     //Jade weapons
         public static final Item JADE_DAGGER = registerItem("jade_dagger", new JadeDagger(ModToolMaterials.JADE, new Item.Settings()
             .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, daggerDamage, fastAttackSpeed)),
             new CustomTooltips("jade_dagger")));
-        public static final Item JADE_CLAYMORE = registerItem("jade_claymore", new SwordItem(ModToolMaterials.JADE, new Item.Settings()
-                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, bigSwordDamage, slowAttackSpeed))));
+        public static final Item JADE_GREATSWORD = registerItem("jade_greatsword", new SwordItem(ModToolMaterials.JADE, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, bigSwordDamage, verySlowAttackSpeed))));
         public static final Item JADE_SHIELD = registerItem("jade_shield", new ShieldItem(new Item.Settings().maxCount(1).maxDamage(2512)));
         public static final Item JADE_SWORD = registerItem("jade_sword", new SwordItem(ModToolMaterials.JADE, new Item.Settings()
                 .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, swordDamage, mediumAttackSpeed))));
+        public static final Item JADE_KATANA = registerItem("jade_katana", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, katanaDamage, mediumAttackSpeed))));
+        public static final Item JADE_HALBERD = registerItem("jade_halberd", new SwordItem(ModToolMaterials.JADE, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, halberdDamage, verySlowAttackSpeed))));
+        public static final Item JADE_SCYTHE = registerItem("jade_scythe", new SwordItem(ModToolMaterials.JADE, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.JADE, scytheDamage, verySlowAttackSpeed))));
+
+
+    public static final Item ENERGIZED_JADE_SWORD = registerItem("energized_jade_sword", new SwordItem(ModToolMaterials.ENERGIZED_JADE, new Item.Settings()
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ENERGIZED_JADE, swordDamage, mediumAttackSpeed))));
+
+        public static final Item JADE_HELMET = registerItem("jade_helmet", new ModArmorItem(ModArmorMaterials.JADE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(42))));
+        public static final Item JADE_CHESTPLATE = registerItem("jade_chestplate", new ArmorItem(ModArmorMaterials.JADE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(42))));
+        public static final Item JADE_LEGGINGS = registerItem("jade_leggings", new ArmorItem(ModArmorMaterials.JADE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(42))));
+        public static final Item JADE_BOOTS = registerItem("jade_boots", new ArmorItem(ModArmorMaterials.JADE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(42))));
+
 
     //Boss weapons
         public static final Item DUSTWORM_LONGBOW = registerItem("dustworm_longbow", new BowItem(new Item.Settings().maxDamage(500)));
@@ -79,7 +100,7 @@ public class ModItems {
     //Hybrid Weapons
 
         //BLACK WIND SPEAR REWORK, WEAPON+TEXTURE
-        public static final Item BLACKWIND_SPEAR = registerItem("blackwind_spear", new Blackwind(new Item.Settings().maxCount(1).maxDamage(1024)));
+        public static final Item BLACKWIND_SPEAR = registerItem("blackwind", new Blackwind(new Item.Settings().maxCount(1).maxDamage(1024)));
         public static final Item SILVER_ONI_MASK = registerItem("silver_oni_mask", new Item(new Item.Settings()));
 
     //Steel items
@@ -89,32 +110,33 @@ public class ModItems {
         public static final Item STEEL_SWORD = registerItem("steel_sword", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
                 .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, swordDamage, mediumAttackSpeed))));
         public static final Item STEEL_KATANA = registerItem("steel_katana", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
-                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, swordDamage, mediumAttackSpeed))));
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, katanaDamage, mediumAttackSpeed))));
         public static final Item STEEL_LONGSWORD = registerItem("steel_longsword", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
                 .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, bigSwordDamage, slowAttackSpeed))));
         public static final Item STEEL_HALBERD = registerItem("steel_halberd", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
-                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, bigWeaponDamage, verySlowAttackSpeed))));
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, halberdDamage, verySlowAttackSpeed))));
         public static final Item STEEL_SCYTHE = registerItem("steel_scythe", new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
-                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, bigWeaponDamage, verySlowAttackSpeed))));
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, scytheDamage, verySlowAttackSpeed))));
         public static final Item STEEL_SHIELD = registerItem("steel_shield", new ShieldItem(new Item.Settings().maxCount(1).maxDamage(1024)));
 
         public static final Item STEEL_HELMET = registerItem("steel_helmet", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-                .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(17))));
+                .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(19))));
         public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(17))));
+                .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(19))));
         public static final Item STEEL_LEGGINGS = registerItem("steel_leggings", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(17))));
+                .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(19))));
         public static final Item STEEL_BOOTS = registerItem("steel_boots", new ArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-                .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(17))));
+                .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(19))));
         // ~
 
         public static final Item AMETHYST_HALBERD = registerItem("amethyst_halberd", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
-                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, bigWeaponDamage, verySlowAttackSpeed))));
+                .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, scytheDamage, verySlowAttackSpeed))));
 
 
         public static final Item SCARLETT = registerItem("scarlett", new Item(new Item.Settings()));
-        public static final Item SCARLETT_HAZE = registerItem("scarlett_haze", new SwordItem(ModToolMaterials.ONYX, new Item.Settings()
+        public static final Item SCARLETT_HAZE = registerItem("scarlett_haze", new ScarlettHazeSword(ModToolMaterials.ONYX, new Item.Settings()
                 .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ONYX, swordDamage, mediumAttackSpeed))));
+
 
     //register
 private static Item registerItem(String name, Item item) {
@@ -162,19 +184,29 @@ private static Item registerItem(String name, Item item) {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             //JADE
+
+            entries.add(JADE_HELMET);
+            entries.add(JADE_CHESTPLATE);
+            entries.add(JADE_LEGGINGS);
+            entries.add(JADE_BOOTS);
+
             entries.add(JADE_DAGGER);
+            entries.add(JADE_SWORD);
+            entries.add(JADE_KATANA);
             entries.add(JADE_SHIELD);
-            entries.add(JADE_CLAYMORE);
+            entries.add(JADE_GREATSWORD);
+            entries.add(JADE_HALBERD);
+            entries.add(JADE_SCYTHE);
+            entries.add(ENERGIZED_JADE_SWORD);
 
             //CITRINE
 
 
             //ONYX
             entries.add(ONYX_DAGGER);
-
+            entries.add(ONYX_KATANA);
             entries.add(ONYX_LONGSWORD);
             entries.add(ONYX_SCYTHE);
-            entries.add(ONYX_KATANA);
 
             //STEEL
             entries.add(STEEL_HELMET);

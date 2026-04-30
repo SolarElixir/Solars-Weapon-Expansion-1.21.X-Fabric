@@ -34,13 +34,20 @@ public static final ItemGroup TELUM_SOLARIS = Registry.register(Registries.ITEM_
                     entries.add(ModItems.JADE_CHISEL);
 
                     //Jade weapons
+                    entries.add(ModItems.JADE_HELMET);
+                    entries.add(ModItems.JADE_CHESTPLATE);
+                    entries.add(ModItems.JADE_LEGGINGS);
+                    entries.add(ModItems.JADE_BOOTS);
+
                     entries.add(ModItems.JADE_DAGGER);
                     entries.add(ModItems.JADE_SWORD);
-                    //entries.add(ModItems.JADE_LONGSWORD);
-                    entries.add(ModItems.JADE_CLAYMORE);
+                    entries.add(ModItems.JADE_KATANA);
+                    entries.add(ModItems.JADE_GREATSWORD);
+                    entries.add(ModItems.JADE_HALBERD);
+                    entries.add(ModItems.JADE_SCYTHE);
                     entries.add(ModItems.JADE_SHIELD);
 
-
+                    entries.add(ModItems.ENERGIZED_JADE_SWORD);
 
                     //Ruby items/blocks
                     entries.add(ModBlocks.RUBY_ORE);

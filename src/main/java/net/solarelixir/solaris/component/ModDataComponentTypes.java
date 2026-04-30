@@ -11,7 +11,8 @@ import java.util.function.UnaryOperator;
 public class ModDataComponentTypes {
 
     public static final ComponentType<SoulStoringCodec> SOUL_INVENTORY_INFO =
-            register("soul_inventory_info", builder -> builder.codec(SoulStoringCodec.SOUL_STORING_CODEC));
+            register("soul_inventory_info", builder ->
+                    builder.codec(SoulStoringCodec.SOUL_STORING_CODEC));
 
 
 

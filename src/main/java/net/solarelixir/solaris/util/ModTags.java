@@ -24,7 +24,7 @@ public class ModTags {
     public static class Items{
 
         public static final TagKey<Item> SOUL_CARRYING_WEAPONS = createTag("soul_carrying_weapons");
-
+        public static final TagKey<Item> IS_JADE_ITEM = createTag("is_jade_item");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(TelumSolaris.MOD_ID, name));
